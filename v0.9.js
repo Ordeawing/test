@@ -6,6 +6,9 @@
             let parentCollection = Array.from(document.getElementsByClassName('parentNameLast'));
             let childCollection = Array.from(document.getElementsByClassName('parentName'));
 
+            console.log(parentCollection);
+            console.log(childCollection);
+
             parentCollection.forEach(item => {
                 let text = item.innerText;
                 let html = item.innerHTML;
