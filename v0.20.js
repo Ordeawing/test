@@ -1,9 +1,8 @@
-(() => {
-    document.body.addEventListener('click', () => {
-        console.log("change");
-    }, true); 
-    
+(() => {    
     window.addEventListener('load', async () => {
+        document.body.addEventListener('click', () => {
+            console.log("change");
+        }, true); 
         console.log(window.location.href);
         if (window.location.href.includes("details?")) {
             let url = 'https://raw.githubusercontent.com/Ordeawing/test/refs/heads/main/willGo.lst';
