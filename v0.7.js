@@ -1,7 +1,7 @@
 (() => {
     window.addEventListener('load', () => {
         console.log("Hello !");
-        let toDelete = "The Simpsons";
+        let toDelete = "Toy Story";
         if (window.location.href.includes("details?")) {
             let parentCollection = Array.from(document.getElementsByClassName('parentNameLast'));
             let childCollection = Array.from(document.getElementsByClassName('parentName'));
