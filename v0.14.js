@@ -11,11 +11,8 @@
                 let parentCollection = Array.from(document.getElementsByClassName('parentNameLast'));
                 let childCollection = Array.from(document.getElementsByClassName('parentName'));
 
-                console.log(parentCollection);
-                console.log(childCollection);
-
                 list.some(willGo => {
-                    if (parentCollection[0].innerText == willGo) {
+                    if ((parentCollection[0].innerText || childCollection[0].innerText) == willGo) {
                         parentCollection.forEach(item => {
                             let text = item.innerText;
                             let html = item.innerHTML;
