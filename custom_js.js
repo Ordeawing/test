@@ -2,8 +2,8 @@
     window.addEventListener('load', () => {
         console.log("Hello !");
         if (window.location.href.includes("details?")) {
-            let parentCollection = document.getElementsByClassName('parentNameLast')
-            let childCollection = document.getElementsByClassName('parentName')
+            let parentCollection = Array.from(document.getElementsByClassName('parentNameLast'));
+            let childCollection = Array.from(document.getElementsByClassName('parentName'));
 
             parentCollection.forEach(item => {
                 let text = item.innerText;
