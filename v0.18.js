@@ -1,5 +1,5 @@
 (() => {
-    window.addEventListener("hashchange", () => {
+    window.addEventListener("popstate", () => {
         console.log("change");
     });
     
