@@ -12,7 +12,7 @@
                 let childCollection = Array.from(document.getElementsByClassName('parentName'));
 
                 list.some(willGo => {
-                    if ((parentCollection[0].innerText || childCollection[0].innerText) == willGo) {
+                    if ((parentCollection[0] || childCollection[0]).innerText == willGo) {
                         parentCollection.forEach(item => {
                             let text = item.innerText;
                             let html = item.innerHTML;
