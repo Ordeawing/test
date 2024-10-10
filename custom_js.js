@@ -1,5 +1,6 @@
 (() => {
     window.addEventListener('load', () => {
+        console.log("Hello !");
         if (window.location.href.startsWith('https://jelly.ordeawing.fr/web/index.html#/details')) {
             let parentCollection = document.getElementsByClassName('parentNameLast')
             let childCollection = document.getElementsByClassName('parentName')
