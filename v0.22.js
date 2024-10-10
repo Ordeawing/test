@@ -1,16 +1,16 @@
 (() => {    
     window.addEventListener('load', () => {
         document.body.addEventListener('click', async () => {
-            if (window.location.href.includes("details?")) {
-                let url = 'https://raw.githubusercontent.com/Ordeawing/test/refs/heads/main/willGo.lst';
-                let res = await fetch(url);
-                if (res.status !== 200) return;
-                let list = (await res.text()).split('\n');
-    
-                setTimeout(() => {
+            let url = 'https://raw.githubusercontent.com/Ordeawing/test/refs/heads/main/willGo.lst';
+            let res = await fetch(url);
+            if (res.status !== 200) return;
+            let list = (await res.text()).split('\n');
+
+            setTimeout(() => {
+                if (window.location.href.includes("details?")) {
                     let parentCollection = Array.from(document.getElementsByClassName('parentNameLast'));
                     let childCollection = Array.from(document.getElementsByClassName('parentName'));
-    
+
                     list.some(willGo => {
                         if ((parentCollection[0] || childCollection[0]).innerText == willGo) {
                             parentCollection.forEach(item => {
@@ -31,8 +31,8 @@
                             return true;
                         }
                     });
-                }, 1000);
-            }
+                }
+            }, 1000);
         }, true); 
     });
 })();
