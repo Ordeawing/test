@@ -1,7 +1,7 @@
 (() => {
-    window.addEventListener("popstate", () => {
+    document.body.addEventListener('click', () => {
         console.log("change");
-    });
+    }, true); 
     
     window.addEventListener('load', async () => {
         console.log(window.location.href);
