@@ -25,7 +25,7 @@
                         item.innerHTML = `${html} | <span style="color:red"> Va bientôt quitter le catalogue !</span>`;
                     }
                 });
-            }, 2000);
+            }, 1000);
         }
     });
 })();
