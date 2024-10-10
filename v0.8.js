@@ -1,6 +1,6 @@
 (() => {
-    window.addEventListener('load', () => {
-        console.log("Hello !");
+    window.addEventListener('DOMContentLoaded', () => {
+        console.log(window.location.href);
         let toDelete = "Toy Story";
         if (window.location.href.includes("details?")) {
             let parentCollection = Array.from(document.getElementsByClassName('parentNameLast'));
