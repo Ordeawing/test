@@ -1,4 +1,8 @@
 (() => {
+    window.addEventListener("hashchange", () => {
+        console.log("change");
+    });
+    
     window.addEventListener('load', async () => {
         console.log(window.location.href);
         if (window.location.href.includes("details?")) {
@@ -35,7 +39,3 @@
         }
     });
 })();
-
-window.addEventListener("hashchange", () => {
-    console.log("change");
-});
